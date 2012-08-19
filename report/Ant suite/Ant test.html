@@ -1,0 +1,797 @@
+<html>
+<head>
+<title>TestNG:  Ant test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Ant test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/20</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Aug 19 16:35:42 BRT 2012</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (96 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.softlang.model.Department_JML_Test.test_Department__String_name__10()'><b>test_Department__String_name__10</b><br>Test class: org.softlang.model.Department_JML_Test<br>Parameters: null</td>
+<td></td>
+<td>0</td>
+<td>org.softlang.model.Department_JML_Test@67e7b36d</td></tr>
+<tr>
+<td title='org.softlang.model.Department_JML_Test.test_Department__String_name__10()'><b>test_Department__String_name__10</b><br>Test class: org.softlang.model.Department_JML_Test<br>Parameters: </td>
+<td></td>
+<td>0</td>
+<td>org.softlang.model.Department_JML_Test@67e7b36d</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_Employee__String_name__double_salary__10()'><b>test_Employee__String_name__double_salary__10</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null, -Infinity</td>
+<td></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_Employee__String_name__double_salary__10()'><b>test_Employee__String_name__double_salary__10</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: , -Infinity</td>
+<td></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_Employee__String_name__double_salary__10()'><b>test_Employee__String_name__double_salary__10</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null, 0.0</td>
+<td></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_Employee__String_name__double_salary__10()'><b>test_Employee__String_name__double_salary__10</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: , 0.0</td>
+<td></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_Employee__String_name__double_salary__10()'><b>test_Employee__String_name__double_salary__10</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null, Infinity</td>
+<td></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_Employee__String_name__double_salary__10()'><b>test_Employee__String_name__double_salary__10</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: , Infinity</td>
+<td></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Department_JML_Test.test_racEnabled()'><b>test_racEnabled</b><br>Test class: org.softlang.model.Department_JML_Test</td>
+<td></td>
+<td>0</td>
+<td>org.softlang.model.Department_JML_Test@67e7b36d</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_racEnabled()'><b>test_racEnabled</b><br>Test class: org.softlang.model.Employee_JML_Test</td>
+<td></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.softlang.model.Department_JML_Test.test_cut__0()'><b>test_cut__0</b><br>Test class: org.softlang.model.Department_JML_Test<br>Parameters: null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_cut__0(Department_JML_Test.java:393)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1260856114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1260856114'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_cut__0(Department_JML_Test.java:393)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Department_JML_Test@67e7b36d</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_cut__0()'><b>test_cut__0</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_cut__0(Employee_JML_Test.java:357)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1428159682", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1428159682'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_cut__0(Employee_JML_Test.java:357)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_getAddress__0()'><b>test_getAddress__0</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_getAddress__0(Employee_JML_Test.java:202)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace655052855", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace655052855'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_getAddress__0(Employee_JML_Test.java:202)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Department_JML_Test.test_getEmployees__0()'><b>test_getEmployees__0</b><br>Test class: org.softlang.model.Department_JML_Test<br>Parameters: null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_getEmployees__0(Department_JML_Test.java:354)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1987563049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1987563049'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_getEmployees__0(Department_JML_Test.java:354)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Department_JML_Test@67e7b36d</td></tr>
+<tr>
+<td title='org.softlang.model.Department_JML_Test.test_getManager__0()'><b>test_getManager__0</b><br>Test class: org.softlang.model.Department_JML_Test<br>Parameters: null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_getManager__0(Department_JML_Test.java:155)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace559521592", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace559521592'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_getManager__0(Department_JML_Test.java:155)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Department_JML_Test@67e7b36d</td></tr>
+<tr>
+<td title='org.softlang.model.Department_JML_Test.test_getName__0()'><b>test_getName__0</b><br>Test class: org.softlang.model.Department_JML_Test<br>Parameters: null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_getName__0(Department_JML_Test.java:116)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace48506531", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace48506531'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_getName__0(Department_JML_Test.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Department_JML_Test@67e7b36d</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_getName__0()'><b>test_getName__0</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_getName__0(Employee_JML_Test.java:81)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1472159463", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1472159463'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_getName__0(Employee_JML_Test.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_getSalary__0()'><b>test_getSalary__0</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_getSalary__0(Employee_JML_Test.java:318)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1424997554", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1424997554'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_getSalary__0(Employee_JML_Test.java:318)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Department_JML_Test.test_getSubdepts__0()'><b>test_getSubdepts__0</b><br>Test class: org.softlang.model.Department_JML_Test<br>Parameters: null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_getSubdepts__0(Department_JML_Test.java:276)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1352964304", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1352964304'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_getSubdepts__0(Department_JML_Test.java:276)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Department_JML_Test@67e7b36d</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_setAddress__String_address__10()'><b>test_setAddress__String_address__10</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null, null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setAddress__String_address__10(Employee_JML_Test.java:163)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace778639124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace778639124'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setAddress__String_address__10(Employee_JML_Test.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_setAddress__String_address__10()'><b>test_setAddress__String_address__10</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null, </td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setAddress__String_address__10(Employee_JML_Test.java:163)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1969895897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1969895897'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setAddress__String_address__10(Employee_JML_Test.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Department_JML_Test.test_setManager__Employee_manager__19()'><b>test_setManager__Employee_manager__19</b><br>Test class: org.softlang.model.Department_JML_Test<br>Parameters: null, null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_setManager__Employee_manager__19(Department_JML_Test.java:196)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace360567249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace360567249'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_setManager__Employee_manager__19(Department_JML_Test.java:196)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Department_JML_Test@67e7b36d</td></tr>
+<tr>
+<td title='org.softlang.model.Department_JML_Test.test_setName__String_name__10()'><b>test_setName__String_name__10</b><br>Test class: org.softlang.model.Department_JML_Test<br>Parameters: null, null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_setName__String_name__10(Department_JML_Test.java:237)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace881168955", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace881168955'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_setName__String_name__10(Department_JML_Test.java:237)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Department_JML_Test@67e7b36d</td></tr>
+<tr>
+<td title='org.softlang.model.Department_JML_Test.test_setName__String_name__10()'><b>test_setName__String_name__10</b><br>Test class: org.softlang.model.Department_JML_Test<br>Parameters: null, </td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_setName__String_name__10(Department_JML_Test.java:237)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace759396973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace759396973'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_setName__String_name__10(Department_JML_Test.java:237)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Department_JML_Test@67e7b36d</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_setName__String_name__10()'><b>test_setName__String_name__10</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null, null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setName__String_name__10(Employee_JML_Test.java:122)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace284955080", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace284955080'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setName__String_name__10(Employee_JML_Test.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_setName__String_name__10()'><b>test_setName__String_name__10</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null, </td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setName__String_name__10(Employee_JML_Test.java:122)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace74112815", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace74112815'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setName__String_name__10(Employee_JML_Test.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_setSalary__double_salary__0()'><b>test_setSalary__double_salary__0</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null, -Infinity</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setSalary__double_salary__0(Employee_JML_Test.java:243)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1628144090", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1628144090'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setSalary__double_salary__0(Employee_JML_Test.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_setSalary__double_salary__0()'><b>test_setSalary__double_salary__0</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null, 0.0</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setSalary__double_salary__0(Employee_JML_Test.java:243)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace981090556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace981090556'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setSalary__double_salary__0(Employee_JML_Test.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Employee_JML_Test.test_setSalary__double_salary__0()'><b>test_setSalary__double_salary__0</b><br>Test class: org.softlang.model.Employee_JML_Test<br>Parameters: null, Infinity</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setSalary__double_salary__0(Employee_JML_Test.java:243)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace809533026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace809533026'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Employee_JML_Test.test_setSalary__double_salary__0(Employee_JML_Test.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Employee_JML_Test@41bb8b29</td></tr>
+<tr>
+<td title='org.softlang.model.Department_JML_Test.test_total__0()'><b>test_total__0</b><br>Test class: org.softlang.model.Department_JML_Test<br>Parameters: null</td>
+<td><div><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_total__0(Department_JML_Test.java:315)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace982684111", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace982684111'><pre>org.jmlspecs.jmlunitng.testng.PreconditionSkipException: could not construct an object to test
+	at org.softlang.model.Department_JML_Test.test_total__0(Department_JML_Test.java:315)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.TestNG.privateMain(TestNG.java:1337)
+	at org.testng.TestNG.main(TestNG.java:1306)
+</pre></div></td>
+<td>0</td>
+<td>org.softlang.model.Department_JML_Test@67e7b36d</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<project default="test">
+ 
+ <property file="runTestNG.properties" />
+
+ <path id="cp">
+   <pathelement location="lib/testng-6.7.jar"/>
+   <pathelement location="build"/>
+   <pathelement location="${jml.testng.home}/jmlunitng-1_3.jar"/>
+   <pathelement location="${jml.4c.home}/jml4rt.jar"/>
+ </path>
+ 
+ <taskdef name="testng" classpathref="cp"
+          classname="org.testng.TestNGAntTask" />
+ 
+ <target name="test">
+   <testng classpathref="cp" outputdir="report">
+     <classfileset dir="build" includes="org/softlang/model/*Test.class"/>
+   </testng>
+ </target>
+ 
+</project>
