@@ -7,50 +7,70 @@ import java.io.Serializable;
  */
 public class Employee implements Serializable {
 
+    private static final Double MIN_SALARY = 50.0; 
+
     private static final long serialVersionUID = -210889592677165250L;
 
-    private /*@ spec_public  @*/String name;
-    private String address;
-    private /*@ spec_public @*/ double salary;
+    private /*@ spec_public non_null @*/ String name;
+    private /*@ spec_public non_null @*/ String address;
+    private /*@ spec_public @*/double salary;
 
-    //@ public invariant name != null && !name.equals("");
-    //@ public invariant salary >= 0; 
+    //@public invariant salary > 0; 
 
-    public Employee(String name, double salary) {
-	if(name == null || name.trim().equals("")) {
-	    this.name = "Foo";
-	}
-	this.salary = salary > 0 ? salary : 0.5; 
+    public Employee() {
+	name = "";
+	address = "";
+	salary = MIN_SALARY;
     }
 
-    public String getName() {
+    /*@
+      @ requires pname != null && paddress != null && psalary > 0.0;
+      @ ensures name == pname 
+      @      && address == paddress
+      @      && salary == psalary;
+      @*/
+    public Employee(String pname, String paddress, double psalary) {
+	name = pname;
+	address = pname;
+	salary = psalary;
+    }
+
+    public /*@ pure @*/ String getName() {
 	return name;
     }
-    
-    public void setName(String name) {
-	this.name = name;
-    }
 
-    public String getAddress() {
+    public /*@ pure @*/ String getAddress() {
 	return address;
     }
 
-    public void setAddress(String address) {
-	this.address = address;
-    }
-    
     public /*@ pure @*/ double getSalary() {
 	return salary;
     }
 
-    public void setSalary(double salary) {
-	this.salary = salary;
+    /*@
+      @ requires pname != null && !pname.trim().equals("");
+      @*/
+    public void setName(String pname) {
+	this.name = pname;
     }
 
     /*@
-      @ requires salary > 0.0;
-      @ assignable salary;
-      @ ensures salary == \old(salary) / 2;
+      @ requires paddress != null && !paddress.trim().equals("");
+      @*/
+    public void setAddress(String paddress) {
+	this.address = paddress;
+    }
+    
+    /*@
+      @ requires psalary > 0;
+      @*/
+    public void setSalary(double psalary) {
+	this.salary = psalary;
+    }
+
+    /*@
+      @ requires salary > 0;
+      @ ensures \old(salary) == salary * 2;
       @*/
     public void cut() {
 	setSalary(getSalary() / 2);

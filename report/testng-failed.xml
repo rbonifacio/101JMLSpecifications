@@ -5,29 +5,11 @@
     <classes>
       <class name="org.softlang.model.Department_JML_Test">
         <methods>
-          <include name="test_getManager__0" invocation-numbers="0"/>
-          <include name="test_total__0" invocation-numbers="0"/>
-          <include name="test_getSubdepts__0" invocation-numbers="0"/>
-          <include name="test_cut__0" invocation-numbers="0"/>
+          <include name="test_total__0" invocation-numbers="1 2"/>
+          <include name="test_cut__0" invocation-numbers="1 2"/>
           <include name="test_racEnabled"/>
-          <include name="test_getEmployees__0" invocation-numbers="0"/>
-          <include name="test_setName__String_name__10" invocation-numbers="0 1"/>
-          <include name="test_getName__0" invocation-numbers="0"/>
-          <include name="test_setManager__Employee_manager__19" invocation-numbers="0"/>
         </methods>
       </class> <!-- org.softlang.model.Department_JML_Test -->
-      <class name="org.softlang.model.Employee_JML_Test">
-        <methods>
-          <include name="test_getName__0" invocation-numbers="0"/>
-          <include name="test_setAddress__String_address__10" invocation-numbers="0 1"/>
-          <include name="test_setName__String_name__10" invocation-numbers="0 1"/>
-          <include name="test_getAddress__0" invocation-numbers="0"/>
-          <include name="test_getSalary__0" invocation-numbers="0"/>
-          <include name="test_setSalary__double_salary__0" invocation-numbers="0 1 2"/>
-          <include name="test_racEnabled"/>
-          <include name="test_cut__0" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- org.softlang.model.Employee_JML_Test -->
     </classes>
   </test> <!-- Ant test(failed) -->
 </suite> <!-- Failed suite [Ant suite] -->

@@ -25,10 +25,13 @@ buildTests:
 compileJML:
 	+$(MAKE) -C src compileJML
 
+compileJava:
+	+$(MAKE) -C src-java compileJava
+
 # compile the generated test cases
-compileTestCases: buildTests compileJML 
+compileTests:  
 	javac -cp ${CLASSPATH}:./build -d build -sourcepath src-tests src-tests/org/softlang/model/*Test.java
 
 # run all tests using a TestNG ANT task 
-runTests: compileTestCases
+runTests: 
 	ant -f runTestNG.xml
