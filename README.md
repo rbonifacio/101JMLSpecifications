@@ -15,7 +15,7 @@ You need to download the following JAR libraries
 * jml4rt.jar (http://www.cs.utep.edu/cheon/download/jml4c/jml4rt.jar)
 * jmlunitng-1_3.jar (http://formalmethods.insttech.washington.edu/software/jmlunitng/release_history_assets/jmlunitng-1_3.jar)
 
-JMLUnitNG need Java 7, so if you are a Mac OS X user, please follow the instruction available at:
+JMLUnitNG needs Java 7, so if you are a Mac OS X user (as I am), please follow the instruction available at:
 
 http://formalmethods.insttech.washington.edu/software/openjml.html
 
