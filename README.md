@@ -28,15 +28,21 @@ path to the jars must be set on two files: variable.mk and runTestNG.properties.
 Than, you can run the test suit using:
 
 $ make buildTests # this will generate the test cases
+
 $ make compileJML # this will compile the source code at src directory using the JML4C compiler 
+
 $ make compileTests # this will compile the generated test cases using a standard Java compiler
+
 $ make runTests # this will run the test cases
 
 If you are interested in testing the original source code, you should proceed as:
 
 $ make buildTests 
+
 $ make compileJava 
+
 $ make compileTests 
+
 $ make runTests 
 
 Restources
